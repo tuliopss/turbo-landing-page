@@ -7,14 +7,14 @@ const ServiceSection = () => {
       <h1 className='content-title'>Nossos serviços: </h1>
       <div className='services-card'>
         <ServiceCard
-          image={"../../public/socialmedia.jpg"}
+          image={"/public/socialmedia.jpg"}
           title={"Social Media"}
           text={
             "Temos profissionais que planejaram o melhor para o seu perfil!"
           }
         />
         <ServiceCard
-          image={"../../public/trafego-image.jpg"}
+          image={"/public/trafego-image.jpg"}
           title={"Tráfego Pago"}
           text={
             "As melhores estratégias do mercado para impulsionar suas vendas!"
