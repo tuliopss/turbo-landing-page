@@ -12,17 +12,6 @@ main {
   gap: 2em;
 }
 
-.main-container {
-  display: flex;
-  text-align: center;
-  margin-top: 2em;
-}
-
-.content-image img {
-  width: 18em;
-  height: 15em;
-}
-
 .image-container {
   width: 30vh;
   height: 30vh;
@@ -31,11 +20,6 @@ main {
 .custom-span {
   color: #f4a84d;
   font-weight: bold;
-}
-
-.content-title {
-  color: #f79824;
-  text-align: center;
 }
 
 .content-container {

@@ -42,14 +42,21 @@
 } */
 
 .navbar {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  padding: 2.5em 1.5em;
-  /* padding-right: 2em; */
+  padding: 0.5em;
   background-color: #f4a84d;
   color: #000;
-  height: 60px;
+  height: auto;
+  width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em; /* Reduz o padding em telas menores */
+  background-color: #f4a84d;
+  color: #000;
+  height: auto; /* Permite que a navbar ajuste sua altura conforme necessário */
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .navbar .title {
