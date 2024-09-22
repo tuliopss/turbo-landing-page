@@ -14,13 +14,8 @@ main {
 
 .main-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10em;
-  gap: 60px;
-
-  /* padding: 1.5em; */
-  margin: 1.5em;
+  text-align: center;
+  margin-top: 2em;
 }
 
 .content-image img {
@@ -40,13 +35,21 @@ main {
 
 .content-title {
   color: #f79824;
+  text-align: center;
 }
 
 .content-container {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-start; */
+  display: flex;
+  gap: 20px;
+  align-items: center; /* Centraliza o conteúdo dentro de cada card */
+  padding: 1.5em;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(102, 84, 84, 0.1);
 }
 
 .text-area {
@@ -64,12 +67,12 @@ main {
   font-family: inherit;
   background-color: #f4a84d;
   cursor: pointer;
-  transition: border-color 0.25s;
+  margin-top: 10px;
 }
 
 .services-container {
   text-align: center;
-  margin-top: 2em;
+  margin-top: 5em;
 }
 
 .services-card {
