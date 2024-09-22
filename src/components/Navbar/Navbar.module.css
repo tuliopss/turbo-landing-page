@@ -44,10 +44,12 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 1em 1em;
+  padding: 1em;
+  padding-right: 2em;
   background-color: #f4a84d;
   color: #000;
   height: 50px;
+  width: 100%;
 }
 
 .navbar .title {
