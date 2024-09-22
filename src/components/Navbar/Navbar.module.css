@@ -41,20 +41,13 @@
   color: #fff;
 } */
 
-.navbar {
-  /* display: flex;
+/* .navbar {
+  display: flex;
   justify-content: space-between;
   padding: 0.5em;
   background-color: #f4a84d;
   color: #000;
   height: auto;
-  width: 100%; */
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5em; /* Reduz o padding em telas menores */
-  background-color: #f4a84d;
-  color: #000;
-  height: auto; /* Permite que a navbar ajuste sua altura conforme necessário */
   width: 100%;
   flex-wrap: wrap;
 }
@@ -64,16 +57,7 @@
   font-size: 1.5em;
 }
 
-.navbar_logo {
-  display: flex;
-  align-items: center;
-}
 
-.navbar_logo img {
-  width: 90px;
-  margin-right: 0.8em;
-  mix-blend-mode: multiply;
-}
 
 .navbar ul {
   display: flex;
@@ -99,4 +83,73 @@
 .navbar li:hover > a {
   background-color: #cc7d1d;
   color: #fff;
+} */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: #f4a84d;
+  color: #000;
+  height: auto;
+  width: 100%;
+  box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura */
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  padding: 0.5em;
+  white-space: nowrap; /* Impede que os links quebrem para a próxima linha */
+}
+.navbar_logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar_logo img {
+  width: 90px;
+  margin-right: 0.8em;
+  mix-blend-mode: multiply;
+}
+.navbar a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  padding: 0.5em 0.8em;
+  border-radius: 5px;
+}
+
+.navbar li:hover {
+  background-color: #cc7d1d;
+  color: #fff;
+}
+
+.navbar li:hover > a {
+  background-color: #cc7d1d;
+  color: #fff;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Coloca logo em cima e os links abaixo */
+    align-items: center;
+  }
+
+  .navbar ul {
+    flex-direction: row; /* Mantém os links lado a lado no mobile */
+    justify-content: center; /* Centraliza os links */
+    flex-wrap: wrap; /* Permite que os links se ajustem em múltiplas linhas se necessário */
+    width: 100%; /* Garante que os links ocupem a largura disponível */
+  }
+
+  .navbar li {
+    padding: 0.5em 0.5em; /* Ajusta o padding para que os links fiquem mais compactos */
+  }
 }
