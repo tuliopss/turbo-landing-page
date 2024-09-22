@@ -44,11 +44,11 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 1em;
-  padding-right: 2em;
+  padding: 2.5em 1.5em;
+  /* padding-right: 2em; */
   background-color: #f4a84d;
   color: #000;
-  height: 50px;
+  height: 60px;
   width: 100%;
 }
 
