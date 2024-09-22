@@ -4,11 +4,12 @@ main {
 }
 
 .home-container {
-  max-height: 10000px;
+  /* max-height: 10000px; */
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  gap: 2em;
 }
 
 .main-container {
@@ -73,7 +74,7 @@ main {
   padding: 1.5em;
   border: 1px solid #ddd;
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 8px rgba(102, 84, 84, 0.1);
 }
 
 .contact-container {
@@ -134,4 +135,46 @@ main {
 
 .cta-button:hover {
   background-color: #128c7e;
+}
+
+/* Estilos gerais para a Home */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  gap: 2em; /* Espaçamento entre as seções */
+}
+
+/* Media query para dispositivos móveis */
+@media (max-width: 768px) {
+  .home-container {
+    padding: 1em;
+    gap: 1.5em; /* Reduz o espaçamento entre seções no mobile */
+  }
+
+  /* Ajustes para o Main */
+  .main-container {
+    flex-direction: column; /* Empilha os elementos no mobile */
+    text-align: center; /* Centraliza o texto no mobile */
+  }
+
+  /* Ajustes para a seção de serviços */
+  .services-container {
+    padding: 1em;
+  }
+
+  .service-cards {
+    flex-direction: column; /* Empilha os cards no mobile */
+    gap: 20px;
+  }
+
+  .service-card {
+    width: 100%; /* O card ocupa a largura total no mobile */
+  }
+
+  /* Ajustes para a seção de contato */
+  .contact-section {
+    padding: 1em;
+    text-align: center;
+  }
 }
