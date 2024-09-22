@@ -145,7 +145,6 @@ main {
   gap: 2em; /* Espaçamento entre as seções */
 }
 
-/* Media query para dispositivos móveis */
 @media (max-width: 768px) {
   .home-container {
     padding: 1em;
@@ -154,7 +153,8 @@ main {
 
   /* Ajustes para o Main */
   .main-container {
-    flex-direction: column; /* Empilha os elementos no mobile */
+    justify-content: center;
+    align-items: center; /* Empilha os elementos no mobile */
     text-align: center; /* Centraliza o texto no mobile */
   }
 
@@ -176,5 +176,10 @@ main {
   .contact-section {
     padding: 1em;
     text-align: center;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
   }
 }
