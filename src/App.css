@@ -23,6 +23,11 @@ main {
   margin: 1.5em;
 }
 
+.content-image img {
+  width: 18em;
+  height: 15em;
+}
+
 .image-container {
   width: 30vh;
   height: 30vh;
@@ -135,51 +140,4 @@ main {
 
 .cta-button:hover {
   background-color: #128c7e;
-}
-
-/* Estilos gerais para a Home */
-.home-container {
-  display: flex;
-  flex-direction: column;
-  padding: 2em;
-  gap: 2em; /* Espaçamento entre as seções */
-}
-
-@media (max-width: 768px) {
-  .home-container {
-    padding: 1em;
-    gap: 1.5em; /* Reduz o espaçamento entre seções no mobile */
-  }
-
-  /* Ajustes para o Main */
-  .main-container {
-    justify-content: center;
-    align-items: center; /* Empilha os elementos no mobile */
-    text-align: center; /* Centraliza o texto no mobile */
-  }
-
-  /* Ajustes para a seção de serviços */
-  .services-container {
-    padding: 1em;
-  }
-
-  .service-cards {
-    flex-direction: column; /* Empilha os cards no mobile */
-    gap: 20px;
-  }
-
-  .service-card {
-    width: 100%; /* O card ocupa a largura total no mobile */
-  }
-
-  /* Ajustes para a seção de contato */
-  .contact-section {
-    padding: 1em;
-    text-align: center;
-  }
-
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-  }
 }

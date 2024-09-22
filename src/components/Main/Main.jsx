@@ -27,7 +27,7 @@ const Main = () => {
         </div>
       </div>
       <div className='content-image'>
-        <img src='/logo.png' alt='logo-turbo' />
+        <img src='/public/logo.png' alt='logo-turbo' />
       </div>
     </main>
   );
