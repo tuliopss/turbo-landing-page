@@ -3,8 +3,9 @@ import "./App.css";
 import Container from "./components/Container/Container";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
+import Purchase from "./pages/Purchase/Purchase";
 
 function App() {
   return (
@@ -12,7 +13,10 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Container>
-          <Home />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/purchase' element={<Purchase />} />
+          </Routes>
         </Container>
       </BrowserRouter>
       <Footer />
